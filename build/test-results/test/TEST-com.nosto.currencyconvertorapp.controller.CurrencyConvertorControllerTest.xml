@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.nosto.currencyconvertorapp.controller.CurrencyConvertorControllerTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2022-05-11T16:32:39" hostname="Dumindus-MacBook-Air.local" time="0.223">
+  <properties/>
+  <testcase name="testConvertCurrency()" classname="com.nosto.currencyconvertorapp.controller.CurrencyConvertorControllerTest" time="0.219"/>
+  <testcase name="testGetCurrencies()" classname="com.nosto.currencyconvertorapp.controller.CurrencyConvertorControllerTest" time="0.002"/>
+  <system-out><![CDATA[2022-05-11 22:02:39.583  INFO 23096 --- [    Test worker] c.n.c.c.CurrencyConvertorController      : Convert Currency : From : null  To : null  Amount : null
+2022-05-11 22:02:39.598  INFO 23096 --- [    Test worker] c.n.c.c.CurrencyConvertorController      : List Currencies
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
