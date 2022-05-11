@@ -30,7 +30,7 @@ tasks.named('test') {
 jar {
 	enabled = true
 	archiveClassifier = ''
-	//archiveBaseName = project.name + '-all'
+	archiveBaseName = project.name + '-all'
 	duplicatesStrategy = DuplicatesStrategy.INCLUDE
 
 	manifest {
