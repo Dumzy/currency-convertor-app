@@ -1,0 +1,1 @@
+web: java -jar build/libs/currency-convertor-app-0.0.1-SNAPSHOT.jar
