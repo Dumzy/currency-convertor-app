@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.nosto.currencyconvertorapp.serviceImpl.CurrencyConvertorServiceImplTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2022-05-11T16:32:39" hostname="Dumindus-MacBook-Air.local" time="1.104">
+<testsuite name="com.nosto.currencyconvertorapp.serviceImpl.CurrencyConvertorServiceImplTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2022-05-11T16:44:16" hostname="Dumindus-MacBook-Air.local" time="1.109">
   <properties/>
-  <testcase name="testConvertCurrency()" classname="com.nosto.currencyconvertorapp.serviceImpl.CurrencyConvertorServiceImplTest" time="1.091"/>
-  <testcase name="testListCurrency()" classname="com.nosto.currencyconvertorapp.serviceImpl.CurrencyConvertorServiceImplTest" time="0.009"/>
-  <system-out><![CDATA[2022-05-11 22:02:40.686 ERROR 23096 --- [    Test worker] c.n.c.s.CurrencyConvertorServiceImpl     : null
-2022-05-11 22:02:40.703 ERROR 23096 --- [    Test worker] c.n.c.s.CurrencyConvertorServiceImpl     : null
+  <testcase name="testConvertCurrency()" classname="com.nosto.currencyconvertorapp.serviceImpl.CurrencyConvertorServiceImplTest" time="1.096"/>
+  <testcase name="testListCurrency()" classname="com.nosto.currencyconvertorapp.serviceImpl.CurrencyConvertorServiceImplTest" time="0.01"/>
+  <system-out><![CDATA[2022-05-11 22:14:17.139 ERROR 23472 --- [    Test worker] c.n.c.s.CurrencyConvertorServiceImpl     : null
+2022-05-11 22:14:17.156 ERROR 23472 --- [    Test worker] c.n.c.s.CurrencyConvertorServiceImpl     : null
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
