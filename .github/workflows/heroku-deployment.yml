@@ -1,0 +1,22 @@
+name: Heroku Deployment
+
+on:
+  push:
+    branches: [ main ]
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: Deploy to Heroku
+      uses: AkhileshNS/heroku-deploy@v3.12.12
+      with:
+        heroku_api_key: cd6862f5-d75c-4d68-a585-591de195bc49
+        heroku_email: duminduyapa8@gmail.com
+        heroku_app_name: currency-convertor-application
