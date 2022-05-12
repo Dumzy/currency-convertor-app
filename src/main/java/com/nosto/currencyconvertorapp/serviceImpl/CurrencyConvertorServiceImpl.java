@@ -1,6 +1,7 @@
 package com.nosto.currencyconvertorapp.serviceImpl;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.nosto.currencyconvertorapp.aspect.MethodExecutionTime;
 import com.nosto.currencyconvertorapp.constant.CurrencyValidationMessages;
 import com.nosto.currencyconvertorapp.constant.HeaderParameters;
 import com.nosto.currencyconvertorapp.constant.PathParameters;
@@ -50,6 +51,7 @@ public class CurrencyConvertorServiceImpl implements CurrencyConvertorService {
      * @param optionalApikey
      * @return converted currency value
      */
+    @MethodExecutionTime
     @Override
     public CurrencyResponseDto convertCurrency(CurrencyDto currencyDto, String optionalApikey) {
 
