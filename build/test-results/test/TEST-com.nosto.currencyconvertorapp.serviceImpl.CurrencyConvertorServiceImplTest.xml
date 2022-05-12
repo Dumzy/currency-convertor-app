@@ -1,10 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.nosto.currencyconvertorapp.serviceImpl.CurrencyConvertorServiceImplTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2022-05-11T19:25:55" hostname="Dumindus-MacBook-Air.local" time="1.16">
+<testsuite name="com.nosto.currencyconvertorapp.serviceImpl.CurrencyConvertorServiceImplTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2022-05-12T15:38:42" hostname="Dumindus-MacBook-Air.local" time="1.381">
   <properties/>
-  <testcase name="testConvertCurrency()" classname="com.nosto.currencyconvertorapp.serviceImpl.CurrencyConvertorServiceImplTest" time="1.134"/>
-  <testcase name="testListCurrency()" classname="com.nosto.currencyconvertorapp.serviceImpl.CurrencyConvertorServiceImplTest" time="0.018"/>
-  <system-out><![CDATA[2022-05-12 00:55:56.591 ERROR 28577 --- [    Test worker] c.n.c.s.CurrencyConvertorServiceImpl     : null
-2022-05-12 00:55:56.626 ERROR 28577 --- [    Test worker] c.n.c.s.CurrencyConvertorServiceImpl     : null
+  <testcase name="testConvertCurrency()" classname="com.nosto.currencyconvertorapp.serviceImpl.CurrencyConvertorServiceImplTest" time="1.363"/>
+  <testcase name="testListCurrency()" classname="com.nosto.currencyconvertorapp.serviceImpl.CurrencyConvertorServiceImplTest" time="0.014"/>
+  <system-out><![CDATA[21:08:43.237 [Test worker] DEBUG org.springframework.test.util.ReflectionTestUtils - Setting field 'apiKey' of type [null] on target object [com.nosto.currencyconvertorapp.serviceImpl.CurrencyConvertorServiceImpl@67c277a0] or target class [class com.nosto.currencyconvertorapp.serviceImpl.CurrencyConvertorServiceImpl] to value [t8npDqK4jposiI6OWdZO7m8ynwpc6MOZ]
+21:08:43.240 [Test worker] DEBUG org.springframework.test.util.ReflectionTestUtils - Setting field 'convertURL' of type [null] on target object [com.nosto.currencyconvertorapp.serviceImpl.CurrencyConvertorServiceImpl@67c277a0] or target class [class com.nosto.currencyconvertorapp.serviceImpl.CurrencyConvertorServiceImpl] to value [https://api.apilayer.com/currency_data/live]
+21:08:43.241 [Test worker] DEBUG org.springframework.test.util.ReflectionTestUtils - Setting field 'listURL' of type [null] on target object [com.nosto.currencyconvertorapp.serviceImpl.CurrencyConvertorServiceImpl@67c277a0] or target class [class com.nosto.currencyconvertorapp.serviceImpl.CurrencyConvertorServiceImpl] to value [https://api.apilayer.com/currency_data/list]
+21:08:43.388 [Test worker] ERROR com.nosto.currencyconvertorapp.serviceImpl.CurrencyConvertorServiceImpl - null
+21:08:43.406 [Test worker] DEBUG org.springframework.test.util.ReflectionTestUtils - Setting field 'apiKey' of type [null] on target object [com.nosto.currencyconvertorapp.serviceImpl.CurrencyConvertorServiceImpl@39008c9f] or target class [class com.nosto.currencyconvertorapp.serviceImpl.CurrencyConvertorServiceImpl] to value [t8npDqK4jposiI6OWdZO7m8ynwpc6MOZ]
+21:08:43.406 [Test worker] DEBUG org.springframework.test.util.ReflectionTestUtils - Setting field 'convertURL' of type [null] on target object [com.nosto.currencyconvertorapp.serviceImpl.CurrencyConvertorServiceImpl@39008c9f] or target class [class com.nosto.currencyconvertorapp.serviceImpl.CurrencyConvertorServiceImpl] to value [https://api.apilayer.com/currency_data/live]
+21:08:43.407 [Test worker] DEBUG org.springframework.test.util.ReflectionTestUtils - Setting field 'listURL' of type [null] on target object [com.nosto.currencyconvertorapp.serviceImpl.CurrencyConvertorServiceImpl@39008c9f] or target class [class com.nosto.currencyconvertorapp.serviceImpl.CurrencyConvertorServiceImpl] to value [https://api.apilayer.com/currency_data/list]
+21:08:43.412 [Test worker] ERROR com.nosto.currencyconvertorapp.serviceImpl.CurrencyConvertorServiceImpl - null
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

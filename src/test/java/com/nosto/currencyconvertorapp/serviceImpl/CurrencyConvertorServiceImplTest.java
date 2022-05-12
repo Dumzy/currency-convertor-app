@@ -35,13 +35,13 @@ public class CurrencyConvertorServiceImplTest {
     private CurrencyConvertorServiceImpl currencyConvertorServiceImpl;
 
     private String apikey = "t8npDqK4jposiI6OWdZO7m8ynwpc6MOZ";
-    private String url = "https://api.apilayer.com/currency_data/convert";
+    private String convertURL = "https://api.apilayer.com/currency_data/live";
     private String listURL = "https://api.apilayer.com/currency_data/list";
 
     @BeforeEach
     public void setup() {
         ReflectionTestUtils.setField(currencyConvertorServiceImpl, "apiKey", apikey);
-        ReflectionTestUtils.setField(currencyConvertorServiceImpl, "url", url);
+        ReflectionTestUtils.setField(currencyConvertorServiceImpl, "convertURL", convertURL);
         ReflectionTestUtils.setField(currencyConvertorServiceImpl, "listURL", listURL);
     }
 

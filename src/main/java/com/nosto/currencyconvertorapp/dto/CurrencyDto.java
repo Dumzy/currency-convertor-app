@@ -3,6 +3,7 @@ package com.nosto.currencyconvertorapp.dto;
 import com.nosto.currencyconvertorapp.constant.CurrencyValidationMessages;
 
 import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotNull;
 
 public class CurrencyDto {
 
@@ -12,8 +13,8 @@ public class CurrencyDto {
     @NotBlank(message = CurrencyValidationMessages.TARGET_CURRENCY_REQUIRED)
     private String targetCurrency;
 
-    @NotBlank(message = CurrencyValidationMessages.MONETARY_VALUE_REQUIRED)
-    private String monetaryValue;
+    @NotNull(message = CurrencyValidationMessages.MONETARY_VALUE_REQUIRED)
+    private Double monetaryValue;
 
     public String getSourceCurrency() {
         return sourceCurrency;
@@ -31,11 +32,11 @@ public class CurrencyDto {
         this.targetCurrency = targetCurrency;
     }
 
-    public String getMonetaryValue() {
+    public Double getMonetaryValue() {
         return monetaryValue;
     }
 
-    public void setMonetaryValue(String monetaryValue) {
+    public void setMonetaryValue(Double monetaryValue) {
         this.monetaryValue = monetaryValue;
     }
 }

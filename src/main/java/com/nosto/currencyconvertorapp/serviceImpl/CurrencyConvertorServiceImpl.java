@@ -20,6 +20,7 @@ import org.springframework.stereotype.Service;
 
 import java.io.IOException;
 import java.util.HashMap;
+import java.util.Iterator;
 import java.util.Map;
 
 @Service
@@ -36,8 +37,8 @@ public class CurrencyConvertorServiceImpl implements CurrencyConvertorService {
     @Value("${api.key}")
     private String apiKey;
 
-    @Value("${currency.data.url}")
-    private String url;
+    @Value("${currency.data.convertURL}")
+    private String convertURL;
 
     @Value("${currency.list.url}")
     private String listURL;
@@ -55,14 +56,23 @@ public class CurrencyConvertorServiceImpl implements CurrencyConvertorService {
         try {
 
             Map<String, String> pathParams = new HashMap<>();
-            pathParams.put(PathParameters.TO, currencyDto.getTargetCurrency());
-            pathParams.put(PathParameters.FROM, currencyDto.getSourceCurrency());
-            pathParams.put(PathParameters.AMOUNT, currencyDto.getMonetaryValue());
+            pathParams.put(PathParameters.CURRENCIES, currencyDto.getTargetCurrency());
+            pathParams.put(PathParameters.SOURCE, currencyDto.getSourceCurrency());
 
-            ResponseDto responseDto = transformObject(initializeRequest(optionalApikey, url, pathParams));
+            ResponseDto responseDto = transformObject(initializeRequest(optionalApikey, convertURL, pathParams));
 
             if (responseDto.isSuccess()) {
+
+                Double rate = 0.0;
+
+                Iterator<Double> iterator = responseDto.getQuotes().values().iterator();
+                while (iterator.hasNext()) {
+                    rate = iterator.next();
+                }
+
+                responseDto.setResult(currencyDto.getMonetaryValue()*rate);
                 return new CurrencyResponseDto(responseDto.getResult());
+
             } else {
                 return statusHandler.checkStatus(responseDto);
             }

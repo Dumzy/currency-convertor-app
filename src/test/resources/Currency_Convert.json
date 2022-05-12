@@ -1,13 +1,8 @@
 {
-  "info": {
-    "quote": 0.80859,
-    "timestamp": 1652264043
+  "quotes": {
+    "USDLKR": 369.895596
   },
-  "query": {
-    "amount": 500,
-    "from": "USD",
-    "to": "GBP"
-  },
-  "result": 404.295,
-  "success": true
+  "source": "USD",
+  "success": true,
+  "timestamp": 1652369164
 }

@@ -20,6 +20,9 @@ dependencies {
 	implementation group: 'org.springdoc', name: 'springdoc-openapi-ui', version: '1.6.8'
 	implementation 'junit:junit:4.13.1'
 
+	implementation group: 'org.springframework.boot', name: 'spring-boot-starter-actuator', version: '2.6.7'
+	implementation group: 'io.micrometer', name: 'micrometer-registry-prometheus', version: '1.8.5'
+
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
 

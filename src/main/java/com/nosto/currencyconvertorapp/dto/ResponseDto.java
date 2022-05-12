@@ -8,6 +8,7 @@ import java.util.Map;
 public class ResponseDto {
 
     private double result;
+    private Map<String, Double> quotes;
     private Map<String, String> currencies;
     private boolean success;
     private ErrorDto error;
@@ -19,6 +20,14 @@ public class ResponseDto {
 
     public void setResult(double result) {
         this.result = result;
+    }
+
+    public Map<String, Double> getQuotes() {
+        return quotes;
+    }
+
+    public void setQuotes(Map<String, Double> quotes) {
+        this.quotes = quotes;
     }
 
     public Map<String, String> getCurrencies() {

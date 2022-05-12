@@ -38,7 +38,7 @@ public class CurrencyConvertorController {
     @Operation(description = "Convert the currency")
     public CurrencyResponseDto convertCurrency(@RequestBody @Valid CurrencyDto currencyDto, @RequestParam(required = false) String apikey) {
 
-        logger.info("Convert Currency : From : {}  To : {}  Amount : {}", currencyDto.getSourceCurrency(),
+        logger.info("Convert Currency : Source : {}  Target : {}  Amount : {}", currencyDto.getSourceCurrency(),
                 currencyDto.getTargetCurrency(), currencyDto.getMonetaryValue());
 
         return currencyConvertorService.convertCurrency(currencyDto, apikey);
